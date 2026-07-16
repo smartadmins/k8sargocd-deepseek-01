@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "position": "Software Engineer",
+    "department": "Engineering",
+    "email": "john.doe@company.com",
+    "phone": "+1-555-0101",
+    "avatar": "https://ui-avatars.com/api/?name=John+Doe&background=random"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "position": "Product Manager",
+    "department": "Product",
+    "email": "jane.smith@company.com",
+    "phone": "+1-555-0102",
+    "avatar": "https://ui-avatars.com/api/?name=Jane+Smith&background=random"
+  },
+  {
+    "id": 3,
+    "name": "Robert Johnson",
+    "position": "UX Designer",
+    "department": "Design",
+    "email": "robert.johnson@company.com",
+    "phone": "+1-555-0103",
+    "avatar": "https://ui-avatars.com/api/?name=Robert+Johnson&background=random"
+  },
+  {
+    "id": 4,
+    "name": "Emily Davis",
+    "position": "DevOps Engineer",
+    "department": "Engineering",
+    "email": "emily.davis@company.com",
+    "phone": "+1-555-0104",
+    "avatar": "https://ui-avatars.com/api/?name=Emily+Davis&background=random"
+  },
+  {
+    "id": 5,
+    "name": "Michael Wilson",
+    "position": "Data Scientist",
+    "department": "Data",
+    "email": "michael.wilson@company.com",
+    "phone": "+1-555-0105",
+    "avatar": "https://ui-avatars.com/api/?name=Michael+Wilson&background=random"
+  }
+]
