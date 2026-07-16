@@ -31,7 +31,7 @@ A full-stack employee directory application with Kubernetes deployment and CI/CD
 - Docker
 - Kubernetes cluster (Minikube, Kind, or Cloud)
 - kubectl
-- ArgoCD (optional)
+- ArgoCD (optional).
 
 ## Local Development
 
