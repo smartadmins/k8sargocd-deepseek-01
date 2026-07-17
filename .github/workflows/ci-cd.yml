@@ -8,7 +8,7 @@ on:
     branches: [ main ]
 
 env:
-  DOCKER_IMAGE: emplyeedirectory
+  DOCKER_IMAGE: test-123
   DOCKER_TAG: latest
 
 jobs:
