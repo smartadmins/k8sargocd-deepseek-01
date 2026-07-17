@@ -39,3 +39,69 @@ A full-stack employee directory application with Kubernetes deployment and CI/CD
 ```bash
 git clone https://github.com/yourusername/employee-directory.git
 cd employee-directory
+
+                       Architecture Flow
+
+                    +----------------------+
+                    |      Developer       |
+                    +----------+-----------+
+                               |
+                               | Git Push
+                               |
+                    +----------v-----------+
+                    |   GitHub Repository  |
+                    +----------+-----------+
+                               |
+                               |
+                 GitHub Actions Trigger
+                               |
+        +----------------------+--------------------+
+        |                                           |
+        | Checkout Source                           |
+        | Install Dependencies                      |
+        | Run Tests                                 |
+        | Build Docker Image                        |
+        | Scan Image (Optional)                     |
+        | Push Docker Image                         |
+        +----------------------+--------------------+
+                               |
+                               |
+                    Docker Image Repository
+                          (Docker Hub)
+                               |
+                               |
+                 Update Kubernetes Manifests
+                               |
+                    +----------v-----------+
+                    |     Git Repository   |
+                    +----------+-----------+
+                               |
+                               |
+                          Watches Git
+                               |
+                    +----------v-----------+
+                    |       Argo CD        |
+                    +----------+-----------+
+                               |
+                     Auto Sync / Self Heal
+                               |
+                +--------------v---------------+
+                |     Kubernetes Cluster       |
+                +--------------+---------------+
+                               |
+                +--------------+--------------+
+                |                             |
+         +------v------+              +-------v------+
+         | Deployment  |              |   Service    |
+         +------+------+
+                |
+         +------v------+
+         |    Pods     |
+         +------+------+
+                |
+         +------v------+
+         |   Ingress   |
+         +------+------+
+                |
+         Employee Directory
+          Web Application
