@@ -7,8 +7,6 @@ RUN npm ci --only=production
 
 COPY . .
 
-RUN npm build
-
 FROM node:18-alpine
 
 WORKDIR /app
