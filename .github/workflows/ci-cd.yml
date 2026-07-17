@@ -3,12 +3,12 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main ]
 
 env:
-  DOCKER_IMAGE: withmultistage
+  DOCKER_IMAGE: emplyeedirectory
   DOCKER_TAG: latest
 
 jobs:
